@@ -46,3 +46,21 @@ $ stm32-toolchain make -version
 $ stm32-toolchain cmake -version
 $ stm32-toolchain make && make flash
 ```
+
+
+## "cat <<EOF"  in file install.sh
+### Examples of cat <<EOF syntax usage in Bash:
+* Pass multi-line string to a file in Bash
+```
+$ cat <<EOF > print.sh
+#!/bin/bash
+echo \$PWD
+echo $PWD
+EOF
+```
+* The print.sh file now contains:
+```
+#!/bin/bash
+echo $PWD
+echo /home/user
+```
